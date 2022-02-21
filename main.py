@@ -6,7 +6,7 @@ api = Api(app)
 
 class Health(Resource):
 	def get(self):
-		return "Successfull message", 201
+		return "Successful message with Http status code 201", 201
 
 api.add_resource(Health, "/health")
 
